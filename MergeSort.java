@@ -5,7 +5,7 @@ public class MergeSort {
     Boolean operation = true; // divide = true, add = false
 
     public static void main(String args[]) {
-      int[] myIntArray = {5, 4, 2, 1};
+      int[] myIntArray = {5, 4, 2, 1, 8, 3, 7, 9};
 
       sort(myIntArray);
     }
@@ -18,12 +18,18 @@ public class MergeSort {
       System.arraycopy(arr, 0, left, 0, arr.length / 2);
       System.arraycopy(arr, arr.length / 2, right, 0, arr.length / 2);
 
-      //if(operation){
-        //divide(left, right);
-      //} else{
+      // if(operation){
+      //   divide(left, right);
+      // }
+      //else{
         // merge(); // recursion
       //}
 
-      System.out.println("ran");
+      for (int i = 0; i < left.length; i++ ) {
+        System.out.println("left: " + left[i]);
+        System.out.println("right: " + right[i]);
+      }
+
+
     }
 }
