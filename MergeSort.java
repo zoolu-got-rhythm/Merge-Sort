@@ -58,7 +58,7 @@ public class MergeSort {
         divide(left2, right2); // recursion
       } else{
         operation = false;
-        // merge(x, y); 
+        // merge(x, y);
       }
 
 
