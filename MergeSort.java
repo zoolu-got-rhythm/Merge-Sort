@@ -53,15 +53,19 @@ public class MergeSort {
 
       if(left1.length != 1){
         System.out.println("recursing");
-        // sub arrays
+        // sub arrays continiously split into halves
         divide(left1, right1); // recursion
         divide(left2, right2); // recursion
       } else{
         operation = false;
-        // merge(x, y); 
+        merge(x, y);
       }
 
 
+
+    }
+
+    public static void merge(int oldLeft[], int oldRight[]){
 
     }
 
